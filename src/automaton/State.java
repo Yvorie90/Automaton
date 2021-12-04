@@ -18,6 +18,8 @@ public class State {
         transitions = stransitions;
     }
 
+    //public State(){}
+
     public String getName() {
         return name;
     }
@@ -44,6 +46,12 @@ public class State {
 
     public void removeTransition(Character transition){
         transitions.remove(transition);
+    }
+
+    public State nextState(char trans){
+        if (!containsTransition(trans))
+            return null;
+        return transitions.get(trans);
     }
 
 }

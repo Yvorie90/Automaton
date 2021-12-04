@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class AutomatonBuilder {
 
-    public Map<String, State> everyStates;
+    private Map<String, State> everyStates;
 
     public Automaton creatWithFile(String filePath) throws FileNotFoundException {
         return addWithFile(new Automaton(), filePath);
@@ -60,7 +60,6 @@ public class AutomatonBuilder {
                     }
                 }
             }
-
 
 
             if (words.length == 3){
