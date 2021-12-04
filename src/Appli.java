@@ -100,7 +100,7 @@ public class Appli {
         String str = reader.readLine();
         if (str.equals("0"))
             return;
-        System.out.println(str+ " " + new AutomatonReader().accept(autom, str));
+        System.out.println(str+ " " + AutomatonReader.accept(autom, str));
         menu3(autom);
     }
 

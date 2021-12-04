@@ -1,5 +1,6 @@
 package automaton;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Automaton {
@@ -12,7 +13,9 @@ public class Automaton {
         this.finalStates = finalStates;
     }
 
-    public Automaton(){}
+    public Automaton(){
+        finalStates = new ArrayList<State>();
+    }
 
     public State getInitialState() {
         return initialState;

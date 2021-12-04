@@ -2,12 +2,13 @@ package automaton;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
 public class AutomatonBuilder {
 
-    private Map<String, State> everyStates;
+    private Map<String, State> everyStates = new HashMap<String, State>();
 
     public Automaton creatWithFile(String filePath) throws FileNotFoundException {
         return addWithFile(new Automaton(), filePath);
