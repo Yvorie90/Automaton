@@ -75,7 +75,7 @@ public class Appli {
 
     public static void menu2() throws IOException {
         while (true) {
-            System.out.println("vueillez choisir parmis ces automates :\n 1 - smiley\n 2 - HHMM(format heure minute)\n 0 - pour revenir au menu");
+            System.out.println("vueillez choisir parmis ces automates :\n 1 - smiley\n 2 - HHMM(format heure minute)\n 3 - email\n 0 - pour revenir au menu");
             Automaton autom = new Automaton();
             switch (reader.readLine()) {
                 case "0":
@@ -86,6 +86,10 @@ public class Appli {
                     break;
                 case "2":
                     autom = new AutomatonBuilder().addWithFile(autom, "data/automaton/HeureMinuteAutomata.txt");
+                    menu3(autom);
+                    break;
+                case "3":
+                    autom = new AutomatonBuilder().addWithFile(autom, "data/automaton/EmailAddressAutomata.txt");
                     menu3(autom);
                     break;
                 default:

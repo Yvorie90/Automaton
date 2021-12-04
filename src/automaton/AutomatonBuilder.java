@@ -65,12 +65,25 @@ public class AutomatonBuilder {
 
             if (words.length == 3){
                 if (!everyStates.containsKey(words[0]))
-                    everyStates.put(words[0],new State(words[0]));
+                    everyStates.put(words[0], new State(words[0]));
                 if (!everyStates.containsKey(words[2]))
-                    everyStates.put(words[2],new State(words[2]));
-                //autom.addTransition(autom.getState(words[0]), words[1].charAt(0), autom.getState(words[2]));
-                everyStates.get(words[0]).addTransition(words[1].charAt(0), everyStates.get(words[2]));
+                    everyStates.put(words[2], new State(words[2]));
+
+                if (words[1].length() == 4 && words[1].charAt(1) == '.' && words[1].charAt(2) == '.'){ // transition like a..z
+                    char tmp = words[1].charAt(0);
+                    while (tmp <= words[1].charAt(3)){ //precondition: a  <  z !!!
+                        everyStates.get(words[0]).addTransition(tmp, everyStates.get(words[2]));
+                        tmp++;
+                    }
+
+                }
+
+
+                if (words[1].length() == 1) { //1 character transition
+                    everyStates.get(words[0]).addTransition(words[1].charAt(0), everyStates.get(words[2]));
+                }
             }
+
         }
 
         return autom;

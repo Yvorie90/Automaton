@@ -1,0 +1,68 @@
+Init I
+
+I a..z P1
+I A..Z P1
+
+P1 a..z P1
+P1 A..Z P1
+P1 0..9 P1
+
+P1 . P2
+
+P2 a..z P1
+P2 A..Z P1
+P2 0..9 P1
+
+P1 + P3
+
+P3 a..z P4
+P3 A..Z P4
+
+P4 a..z P4
+P4 A..Z P4
+P4 0..9 P4
+
+P4 @ A0
+
+P1 @ A0
+
+A0 a..z A0
+A0 A..Z A0
+A0 0..9 A0
+
+A0 . A05
+
+A05 a..z A1
+A05 A..Z A1
+A05 0..9 A1
+
+A1 a..z A1
+A1 A..Z A1
+A1 0..9 A1
+
+Final A1
+
+A1 - A2
+
+A2 a..z A1
+A2 A..Z A1
+A2 0..9 A1
+
+A1 . A305
+
+A305 a..z A3
+A305 A..Z A3
+A305 0..9 A3
+
+A3 a..z A3
+A3 A..Z A3
+A3 0..9 A3
+
+Final A3
+
+
+
+
+
+
+
