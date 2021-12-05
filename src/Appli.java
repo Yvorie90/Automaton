@@ -58,7 +58,7 @@ public class Appli {
         while (true) {
             //System.out.println("veuillez saisir le chemin jusqu'au fichier contenant l'automate ou 0 pour revenir au menu :\n");
             String path = chooseFile(new JFrame());
-            System.out.println(String.format("\"%s\"", path));
+            //System.out.println(path);
             if (path == null)
                 return;
             try {
