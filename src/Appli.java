@@ -100,12 +100,14 @@ public class Appli {
     }
 
     public static void menu3(Automaton autom) throws IOException {
-        System.out.println("veuillez saisir la chaine de caractères que vous voulez comparer avec l'automate ou 0 pour revenir au menu :\n");
+        System.out.println("veuillez saisir la chaine de caractères que vous voulez comparer avec l'automate ou:\n - 1 pour afficher l'automate\n - 0 pour revenir au menu\n");
         String str = reader.readLine();
         if (str.equals("0"))
             return;
-        System.out.println(str+ " " + AutomatonReader.accept(autom, str));
-        System.out.println(autom);
+        else if (str.equals("1"))
+            System.out.println(autom);
+        else
+            System.out.println(str+ " " + AutomatonReader.accept(autom, str));
         menu3(autom);
     }
 

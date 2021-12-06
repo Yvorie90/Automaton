@@ -6,8 +6,8 @@ import java.util.List;
 
 public class Automaton {
 
-    public State initialState;
-    public List<State> finalStates;
+    private State initialState;
+    private List<State> finalStates;
 
     public Automaton(State initialState, List<State> finalStates) {
         this.initialState = initialState;
