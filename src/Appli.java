@@ -58,7 +58,7 @@ public class Appli {
         while (true) {
             //System.out.println("veuillez saisir le chemin jusqu'au fichier contenant l'automate ou 0 pour revenir au menu :\n");
             String path = chooseFile(new JFrame());
-            //System.out.println(path);
+            System.out.println("your automaton : \n " + path);
             if (path == null)
                 return;
             try {
@@ -105,6 +105,7 @@ public class Appli {
         if (str.equals("0"))
             return;
         System.out.println(str+ " " + AutomatonReader.accept(autom, str));
+        System.out.println(autom);
         menu3(autom);
     }
 
