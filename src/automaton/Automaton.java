@@ -41,7 +41,25 @@ public class Automaton {
         finalStates.add(finalS);
     }
 
+    @Override
+    public String toString() {
+        StringBuilder str = new StringBuilder();
+
+        str.append("Init : ").append(initialState.getName()).append("\n");
+        str.append("Final : ");
+        for (int i = 0; i < finalStates.size(); i++) {
+            str.append(finalStates.get(i).getName());
+            if (finalStates.get(i+1) == null)
+                str.append("\n");
+            else
+                str.append(", ");
+        }
+        str.append("States :\n");
+
+        
 
 
 
+        return str.toString();
+    }
 }
