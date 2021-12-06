@@ -54,4 +54,15 @@ public class State {
         return transitions.get(trans);
     }
 
+    @Override
+    public String toString() {
+        StringBuilder str = new StringBuilder();
+
+        str.append(name).append(" :\n");
+        for (char trans : transitions.keySet())
+            str.append("  ").append(trans).append(" -> ").append(transitions.get(trans).getName()).append("\n");
+
+
+        return str.toString();
+    }
 }

@@ -44,6 +44,7 @@ public class Automaton {
 
     @Override
     public String toString() {
+        //TODO add a way to translate a ->... , b ->... , ... , z ->... etc to a..z (with if get(i)+1 == get(i+1)
         StringBuilder str = new StringBuilder();
         List<State> list = new ArrayList<State>();
         list.add(initialState);
@@ -76,9 +77,6 @@ public class Automaton {
                 break;
             }
         }
-        
-
-
 
         return str.toString();
     }
