@@ -98,7 +98,7 @@ public class Appli {
     }
 
     public static void menu3(Automaton autom) throws IOException {
-        System.out.println("veuillez saisir la chaine de caractères que vous voulez comparer avec l'automate ou:\n - 1 pour afficher l'automate\n - 0 pour revenir au menu\n");
+        System.out.println("veuillez saisir la chaine de caractères que vous voulez comparer avec l'automate sinon:\n 1 - afficher l'automate\n 0 - pour revenir au menu\n");
         String str = reader.readLine();
         if (str.equals("0"))
             return;
