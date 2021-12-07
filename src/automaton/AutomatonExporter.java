@@ -9,7 +9,6 @@ import java.util.List;
 
 public class AutomatonExporter {
 
-
     public static boolean exportAutomatonFormat(Automaton autom, String fileName) {
         try {
             FileWriter writer = new FileWriter(fileName);
@@ -24,9 +23,10 @@ public class AutomatonExporter {
     //TODO
     public static boolean exportDotFormat(Automaton autom, String fileName){
         try {
-            FileWriter writer = new FileWriter(fileName);
-
+            FileWriter writer = new FileWriter(fileName + ".dot");
             StringBuilder str = new StringBuilder();
+
+
 
 
             writer.write(str.toString());
@@ -35,15 +35,7 @@ public class AutomatonExporter {
         } catch (IOException e) {
             return false;
         }
-
-
     }
-
-
-
-
-
-
 
 
 
@@ -52,8 +44,6 @@ public class AutomatonExporter {
             List<State> list = new ArrayList<State>();
             list.add(autom.getInitialState());
             LinkedHashSet<State> hashSetState = new LinkedHashSet<State>();
-
-
 
             str.append("Init ").append(autom.getInitialState().getName()).append("\n");
             str.append("Final ");
@@ -81,11 +71,7 @@ public class AutomatonExporter {
                     break;
                 }
             }
-
             return str.toString();
-
     }
-
-
 
 }
