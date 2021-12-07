@@ -25,12 +25,14 @@ public class AutomatonBuilder {
      *    "Final YourFinalState"<br>
      *  - Each transition need to be expressed like this :<br>
      *    "TheStateTheTransitionStart TheCharacterTransition TheStateTheTransitionEnd"<br>
+     *    (now support expression like a..z or 0..9, it will add transitions a to z from ASCII<br>
+     *    /!\ a..z ≠ z..a /!\ )<br>
      *<br>
      *  Exemple:<br>
      *  Init S0<br>
      *  Final S2<br>
      *  S0 a S1<br>
-     *  S1 b S2<br>
+     *  S1 0..9 S2<br>
      *<br>
      *  Note: there is no order for each instruction in the file, you can tell your init an final states wherever you want
      *
@@ -77,7 +79,6 @@ public class AutomatonBuilder {
                     }
 
                 }
-
 
                 if (words[1].length() == 1) { //1 character transition
                     everyStates.get(words[0]).addTransition(words[1].charAt(0), everyStates.get(words[2]));

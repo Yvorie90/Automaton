@@ -11,7 +11,7 @@ public class Appli {
 
 
     public static void main(String[] args) throws IOException {
-        //System.out.println(chooseFile());
+        //TODO retirer la Jframe qui s'affiche en plus lors de l'affichage du FileDialog
         menu();
     }
 
