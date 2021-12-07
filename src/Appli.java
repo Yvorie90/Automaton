@@ -33,13 +33,10 @@ public class Appli {
     public static void menu() throws IOException {
         //String path = chooseFile(new JFrame());
         while (true) {
-            System.out.println("veuillez choisir une action :\n" +
-                    " 1 - charger un automate avec un fichier\n" +
-                    " 2 - choisir un des automates par défaut\n"+
-                    " 0 - arrêter le programme\n");
+            System.out.println("veuillez choisir une action :\n 1 - charger un automate avec un fichier\n 2 - choisir un des automates par défaut\n 0 - arrêter le programme\n");
             switch (reader.readLine()) {
                 case "0":
-                    return;
+                    System.exit(0);
                 case "1":
                     menu1();
                     break;
