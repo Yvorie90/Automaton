@@ -20,7 +20,7 @@ public class Appli {
         //framee.setSize(800,600);
         framee.setVisible(true);
         String absPAth = new File(".").getAbsolutePath();
-        FileDialog fd = new FileDialog(framee,"choose your automata", FileDialog.LOAD);
+        FileDialog fd = new FileDialog(framee,"choose your automaton", FileDialog.LOAD);
         framee.setLocationRelativeTo(fd);
         fd.setDirectory(absPAth);
         fd.setVisible(true);
@@ -53,11 +53,12 @@ public class Appli {
 
     public static void menu1() throws IOException {
         while (true) {
-            //System.out.println("veuillez saisir le chemin jusqu'au fichier contenant l'automate ou 0 pour revenir au menu :\n");
             String path = chooseFile(new JFrame());
-            System.out.println("your automaton : \n " + path);
-            if (path == null)
+            if (path != null) System.out.println("votre automate : \n" + path);
+            else {
+                System.out.println("vous avez annulé votre choix, retour au menu");
                 return;
+            }
             try {
                 AutomatonBuilder autombuild = new AutomatonBuilder();
                 Automaton autom = autombuild.creatWithFile(path);
