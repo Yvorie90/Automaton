@@ -6,15 +6,26 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+/**
+ * AutomatonBuilder class, allow you to create a builder for an {@link Automaton} from file
+ * @see Automaton
+ * @see AutomatonExporter
+ */
 public class AutomatonBuilder {
 
     private Map<String, State> everyStates = new HashMap<String, State>();
 
+    /**
+     * Allow you to create an {@link Automaton} with a file by giving the path of the file
+     * @param filePath the path of your automaton file
+     * @return a new {@link Automaton} created with your file
+     * @throws FileNotFoundException if the file is not founded (check if your path is correct)
+     */
     public Automaton creatWithFile(String filePath) throws FileNotFoundException {
         return addWithFile(new Automaton(), filePath);
     }
 
-    /**
+    /* OLD JAVADOC (goto readme)
      * A methode to create an automata from a file<br>
      *<br>
      * Your file need to respect this:<br>
@@ -39,6 +50,15 @@ public class AutomatonBuilder {
      *
      * @param filePath the path of the file where the automata is stocked
      * @throws FileNotFoundException if the path is not correct
+     */
+
+    /**
+     * Allow you to concat (add data) from a given {@link Automaton} with another from a file by giving the path
+     * useful if you want to partition your automata in multiple files
+     * @param autom the {@link Automaton} you want to add thing to
+     * @param filePath the path of your automaton file
+     * @return the {@link Automaton} with new datas added
+     * @throws FileNotFoundException if the file is not founded (check if your path is correct)
      */
     public Automaton addWithFile(Automaton autom, String filePath) throws FileNotFoundException {
         Scanner myFile = new Scanner(new FileInputStream(filePath));
@@ -90,7 +110,6 @@ public class AutomatonBuilder {
         return autom;
 
     }
-
 
 
 }

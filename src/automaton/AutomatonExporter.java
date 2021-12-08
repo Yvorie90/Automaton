@@ -1,14 +1,26 @@
 package automaton;
 
-import javax.swing.*;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 
+/**
+ * AutomatonExporter class, Allow you to create a file of your {@link Automaton} with static methods
+ * this file has a specific syntax used to regenerate your {@link Automaton} by using {@link AutomatonBuilder}
+ * @see Automaton
+ * @see AutomatonBuilder
+ */
 public class AutomatonExporter {
 
+    /**
+     * Allow you to create you automaton file by giving the {@link Automaton} and a name for your file
+     * @param autom the {@link Automaton} you want to put in a file
+     * @param fileName the name of the file
+     * @return true if the file is correctly created, return false otherwise
+     * @see AutomatonExporter#getFormatedAutomaton(Automaton)
+     */
     public static boolean exportAutomatonFormat(Automaton autom, String fileName) {
         try {
             FileWriter writer = new FileWriter(fileName);
@@ -20,8 +32,16 @@ public class AutomatonExporter {
         }
     }
 
-    //TODO
-    public static boolean exportDotFormat(Automaton autom, String fileName){
+    /**
+     *  !!! NOT IMPLEMENTED YET !!!
+     *
+     * Allow you to create you automaton file by giving the {@link Automaton} and a name for your file
+     * using the .dot format to create image of your automaton
+     * @param autom the {@link Automaton} you want to put in a file
+     * @param fileName the name of the file
+     * @return true if the file is correctly created, return false otherwise
+     */
+    public static boolean exportDotFormat(Automaton autom, String fileName){ //TODO
         try {
             FileWriter writer = new FileWriter(fileName + ".dot");
             StringBuilder str = new StringBuilder();
@@ -38,7 +58,12 @@ public class AutomatonExporter {
     }
 
 
-
+    /**
+     * @param autom the {@link Automaton} you want to get the String at the format used in {@link AutomatonBuilder}
+     * @return the string representing the given {@link Automaton}
+     * @see AutomatonExporter#exportAutomatonFormat(Automaton, String)  
+     * @see AutomatonBuilder
+     */
     public static String getFormatedAutomaton(Automaton autom){
             StringBuilder str = new StringBuilder();
             List<State> list = new ArrayList<State>();
