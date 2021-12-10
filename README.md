@@ -12,7 +12,7 @@ you can get [here](https://github.com/Yvorie90/Automaton/tree/main/jar) the jar 
 - [uses of an automaton](#lets-have-an-example)
 
 
-#### What's an automaton 
+### What's an automaton 
 ![exemple of an autoamton]() <br>
 an automaton is basically a bunch of named states linked with character transitions <br>
 there is one inital state and one or multiple final states <br>
@@ -46,7 +46,7 @@ you can use native constructor and a bunch of getter and setter to modify direct
 but I advise you tu use AutomatonBuilder and files
 
 
-#### Use file to save and write your automaton
+### Use file to save and write your automaton
 
 what's the format of automaton files<br>
 
@@ -82,7 +82,7 @@ just remember using line brak between instructions<br>
 (two last thing, if you set multiple time Init it will keep the last one and if you put more than a character as a transition it will keep the first one)
 
 
-#### Let's have an example
+### Let's have an example
 
 
 
