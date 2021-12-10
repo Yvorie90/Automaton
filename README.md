@@ -181,7 +181,7 @@ as you can see it's exactly the same menu as before<br>
 here is some exemple with the email automaton to finish this showcase properly<br>
 ![screenshot test matching email](https://cdn.discordapp.com/attachments/778226108834512937/918924539503730708/unknown.png)<br>
 <br>
-important thing:<br>
+**important thing:**<br>
 in any menu, if you give any improper input the app tell you it's improper and ask you again<br>
 ![screenshot improper input](https://cdn.discordapp.com/attachments/778226108834512937/918925992741969930/unknown.png)<br>
 
