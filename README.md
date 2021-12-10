@@ -176,8 +176,8 @@ in this other choice menu you can just choose an automaton and bring you to the 
 (you can always give 0 to come back to the first menu)<br>
 ![screenshot menu 2](https://media.discordapp.net/attachments/778226108834512937/918922742567419914/unknown.png)<br>
 let's choose the email automaton<br>
-![screenshot matching email](https://cdn.discordapp.com/attachments/778226108834512937/918923345066590268/unknown.png)<br>
 as you can see it's exactly the same menu as before<br>
+![screenshot matching email](https://cdn.discordapp.com/attachments/778226108834512937/918923345066590268/unknown.png)<br>
 here is some exemple with the email automaton to finish this showcase properly<br>
 ![screenshot test matching email](https://cdn.discordapp.com/attachments/778226108834512937/918924539503730708/unknown.png)<br>
 <br>
