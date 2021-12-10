@@ -13,7 +13,8 @@ you can get [here](https://github.com/Yvorie90/Automaton/tree/main/jar) the jar 
 
 
 ### What's an automaton 
-![exemple of an autoamton](https://cdn.discordapp.com/attachments/778226108834512937/918875995270967336/Untitled_Diagram.drawio_1.png) here is a very simple and clear exemple<br>
+here is a very simple and clear exemple <br>
+![exemple of an autoamton](https://cdn.discordapp.com/attachments/778226108834512937/918875995270967336/Untitled_Diagram.drawio_1.png) <br>
 an automaton is basically a bunch of named states linked with character transitions <br>
 there is one inital state and one or multiple final states <br>
 
