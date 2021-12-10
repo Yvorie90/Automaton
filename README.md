@@ -24,14 +24,23 @@ public class Automaton {
 
     private State initialState;
     private List<State> finalStates = new ArrayList<State>();
+    
   ...
 }  
 ```
 using State class
 ```java
+public class State {
 
+    private String name;
+    private Map<Character, State> transitions;
+
+  ...
+}  
 
 ```
+the automaton by itself only have the initial State, the other States are accesible with their transitions<br>
+and a list of final State to know the end of the automaton<br>
 
 #### Use file to save and write your automaton
 
