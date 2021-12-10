@@ -122,21 +122,21 @@ Automaton automHHMM = new AutomatonBuilder().creatWithFile("data/automaton/Smile
 now we have our automaton, let's use it now<br>
 we'll use the class AutomatonReader, like AutomatonExporter it has only static methods<br>
 if you didn't guessed this automaton is for 'hours : minutes' format<br>
-now let's do some test
+now let's do some test<br>
+those one return true
 ```
 //the accept method match the automaton with the given string (don't forget to check the doc) 
 AutomatonReader.accept(automHHMM, "11:23");
 AutomatonReader.accept(automHHMM, "00:00");
 AutomatonReader.accept(automHHMM, "23:59");
 ```
-those one return true
+those one return false<br>
 ```
 AutomatonReader.accept(automHHMM, "11;23");
 AutomatonReader.accept(automHHMM, "24:00");
 AutomatonReader.accept(automHHMM, "05:60");
 AutomatonReader.accept(automHHMM, "fzehf");
 ```
-those one return false<br>
 
 ### use the appli (only french for now)
 
