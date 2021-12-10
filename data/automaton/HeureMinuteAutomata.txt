@@ -1,6 +1,5 @@
 Init E0
-Final M,G
-Final G
+Final M
 
 E0 0 H1
 E0 1 H1
