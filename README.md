@@ -97,7 +97,7 @@ AutomatonExporter.exportAutomatonFormat(autom, "myAutomaton")
 
 ```
 It will make a new file without extention containing your automaton,<br>
-so you can choose it when setting the name (I advise a simple .txt)
+so you can choose it when you set the name (I advise a simple .txt)
 
 ### Let's have an example of use
 
