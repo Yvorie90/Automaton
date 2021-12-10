@@ -155,7 +155,7 @@ if you give:<br>
 **choice 1 choose your automaton file**<br>
 you can choose to close the window<br>
 ![screenshot win menu1 close](https://media.discordapp.net/attachments/778226108834512937/918915779007754260/unknown.png?width=466&height=430)<br>
-it'll bring you back the the choice menu<br>
+it'll bring you back to the choice menu<br>
 ![screenshot win menu1 close term](https://media.discordapp.net/attachments/778226108834512937/918915667992932372/unknown.png)<br>
 <br>
 you can choose your automaton file (we'll test with the smiley automaton)<br>
