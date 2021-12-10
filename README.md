@@ -20,8 +20,12 @@ there is one inital state and one or multiple final states <br>
 **how does it look like in the code** <br>
 an Automaton class
 ```java
+public class Automaton {
 
-
+    private State initialState;
+    private List<State> finalStates = new ArrayList<State>();
+  ...
+}  
 ```
 using State class
 ```java
