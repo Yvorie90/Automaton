@@ -79,7 +79,18 @@ Final A1,A2,A3
 ```
 you can put Init, Final and transition wherever you want in your file<br>
 just remember using line brak between instructions<br>
-(two last thing, if you set multiple time Init it will keep the last one and if you put more than a character as a transition it will keep the first one)
+(two last thing, if you set multiple time Init it will keep the last one and if you put more than a character as a transition it will keep the first one)<br>
+
+**How to use AutomatonBuilder**<br>
+don't forget to check the [doc](https://github.com/Yvorie90/Automaton/tree/main/doc)
+
+```java
+//create a new Automaton by using AutomatonBuilder and giving it the filepath
+Automaton autom = new AutomatonBuilder().creatWithFile("data/automaton/SmileyAutomata.txt");
+
+```
+
+
 
 
 ### Let's have an example
