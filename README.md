@@ -148,8 +148,9 @@ first it'll open a choice menu in your terminal<br>
 ![screenshot menu0](https://cdn.discordapp.com/attachments/778226108834512937/918913659953111090/unknown.png)<br>
 you can stop it by giving 0<br>
 ![screenshot stop](![image](https://user-images.githubusercontent.com/73123597/145616574-90fd6cb4-f06f-460a-ab63-bddd2b723a6a.png)<br>
-if you give 1, it'll open a window to let your search your automaton file<br>
-if you give 2, it'll open another menu with [those](https://github.com/Yvorie90/Automaton/tree/main/data/automaton) default automaton to let you test <br>
+if you give:<br>
+1 - it'll open a window to let your search your automaton file<br>
+2 - it'll open another menu with [those](https://github.com/Yvorie90/Automaton/tree/main/data/automaton) default automaton to let you test <br>
 <br>
 **choice 1 choose your automaton file**<br>
 you can choose to close the window<br>
@@ -157,12 +158,14 @@ you can choose to close the window<br>
 it'll bring you back the the choice menu<br>
 ![screenshot win menu1 close term](https://media.discordapp.net/attachments/778226108834512937/918915667992932372/unknown.png)<br>
 <br>
-you can choose your automaton file (we'll test with an email automaton)<br>
-![screenshot win menu1 open autom](https://media.discordapp.net/attachments/778226108834512937/918915511016882226/unknown.png?width=472&height=430)<br>
+you can choose your automaton file (we'll test with the smiley automaton)<br>
+![screenshot win menu1 open autom](https://cdn.discordapp.com/attachments/778226108834512937/918919119301124166/unknown.png)<br>
 it'll tell you the path of your file to ensure you it is the right one and bring you to another choice menu<br>
-
-
-
+<br>
+in this menu you can give:<br>
+0 - to get back to the first choice menu<br>
+1 - it'll show you your automaton (using the toString method)<br>
+![screenshot matching menu tostring](https://cdn.discordapp.com/attachments/778226108834512937/918919934459928616/unknown.png)
 
 
 
