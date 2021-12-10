@@ -185,7 +185,7 @@ important thing:<br>
 in any menu, if you give any improper input the app tell you it's improper and ask you again<br>
 ![screenshot improper input](https://cdn.discordapp.com/attachments/778226108834512937/918925992741969930/unknown.png)<br>
 
-##if you have any question
+## if you have any question
 feel free to text me on discord Yvorie90#0349<br>
 
 
