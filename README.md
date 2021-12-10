@@ -8,8 +8,8 @@ you can get [here](https://github.com/Yvorie90/Automaton/tree/main/jar) the jar 
 
 ### Summary
 - [structure of an automaton](#whats-an-automaton)
-- [save it on files](use-file-to-save-and-write-your-automaton)
-- [uses of an automaton](lets-have-an-example)
+- [save it on files](#use-file-to-save-and-write-your-automaton)
+- [uses of an automaton](#lets-have-an-example)
 
 
 
