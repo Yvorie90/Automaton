@@ -39,10 +39,47 @@ public class State {
 }  
 
 ```
-the automaton by itself only have the initial State, the other States are accesible with their transitions<br>
-and a list of final State to know the end of the automaton<br>
+the automaton by itself only have the initial state, the other states are accesible with their transitions<br>
+and a list of final states to know the end of the automaton<br>
+
+you can use native constructor and a bunch of getter and setter to modify directly, doc is [here](https://github.com/Yvorie90/Automaton/tree/main/doc)<br>
+but I advise you tu use AutomatonBuilder and files
+
 
 #### Use file to save and write your automaton
+
+what's the format of automaton files<br>
+
+[this one](https://github.com/Yvorie90/Automaton/blob/main/data/automaton/SmileyAutomata.txt) is an exemple of a simple automaton of smiley like ":-)"<br>
+```
+Init E0 
+Final E4
+E0 : E1
+E0 ; E2
+E1 = E3
+E1 - E3
+E2 - E3
+E3 ) E4
+E3 ( E4
+```
+set your initial State whit "Init" and the name of your inital state<br>
+set your final(s) state(s) with "Final" and the name of your state<br>
+to set your transition tell the state where the transition begin, the character transition and then the state where it goes to<br>
+
+important things:<br>
+you can use ".." to set multiple transitions once, like alpha (a,b,c,d, ... ,y,z) like that:<br>
+```
+A1 a..z A2
+A2 A..Z A3
+A3 0..9 A4
+```
+you can set multiple final states once using coma (no space) like that:
+```
+Final A1,A2,A3
+```
+you can put Init, Final and transition wherever you want in your file<br>
+just remember using line brak between instructions<br>
+(two last thing, if you set multiple time Init it will keep the last one and if you put more than a character as a transition it will keep the first one)
 
 
 #### Let's have an example
