@@ -147,7 +147,7 @@ just download this project and run the main class in [appli](https://github.com/
 first it'll open a choice menu in your terminal<br>
 ![screenshot menu0](https://cdn.discordapp.com/attachments/778226108834512937/918913659953111090/unknown.png)<br>
 you can stop it by giving 0<br>
-![screenshot stop](![image](https://user-images.githubusercontent.com/73123597/145616574-90fd6cb4-f06f-460a-ab63-bddd2b723a6a.png)<br>
+![screenshot stop](https://media.discordapp.net/attachments/778226108834512937/918917519467741194/unknown.png)<br>
 if you give:<br>
 1 - it'll open a window to let your search your automaton file<br>
 2 - it'll open another menu with [those](https://github.com/Yvorie90/Automaton/tree/main/data/automaton) default automaton to let you test <br>
@@ -165,12 +165,28 @@ it'll tell you the path of your file to ensure you it is the right one and bring
 in this menu you can give:<br>
 0 - to get back to the first choice menu<br>
 1 - it'll show you your automaton (using the toString method)<br>
-![screenshot matching menu tostring](https://cdn.discordapp.com/attachments/778226108834512937/918919934459928616/unknown.png)
+![screenshot matching menu tostring](https://cdn.discordapp.com/attachments/778226108834512937/918919934459928616/unknown.png)<br>
+if you give anything else it'll take this as a string to compare with the given automaton and tell you true or false<br>
+![screenshot matching menu true](https://media.discordapp.net/attachments/778226108834512937/918921720100966410/unknown.png)<br>
+![screenshot matching menu false](https://media.discordapp.net/attachments/778226108834512937/918921885905977364/unknown.png)<br>
+it'll show you again this menu until you don't give 0 (or close your terminal)<br>
+<br>
+**choice 2 choose a default automaton**<br>
+in this other choice menu you can just choose an automaton and bring you to the toString / testing menu<br>
+(you can always give 0 to come back to the first menu)<br>
+![screenshot menu 2](https://media.discordapp.net/attachments/778226108834512937/918922742567419914/unknown.png)<br>
+let's choose the email automaton<br>
+![screenshot matching email](https://cdn.discordapp.com/attachments/778226108834512937/918923345066590268/unknown.png)<br>
+as you can see it's exactly the same menu as before<br>
+here is some exemple with the email automaton to finish this showcase properly<br>
+![screenshot test matching email](https://cdn.discordapp.com/attachments/778226108834512937/918924539503730708/unknown.png)<br>
+<br>
+important thing:<br>
+in any menu, if you give any improper input the app tell you it's improper and ask you again<br>
+![screenshot improper input](https://cdn.discordapp.com/attachments/778226108834512937/918925992741969930/unknown.png)<br>
 
-
-
-
-
+##if you have any question
+feel free to text me on discord Yvorie90#0349<br>
 
 
 
