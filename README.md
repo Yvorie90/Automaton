@@ -151,7 +151,7 @@ you can stop it by giving 0<br>
 if you give 1, it'll open a window to let your search your automaton file<br>
 if you give 2, it'll open another menu with [those](https://github.com/Yvorie90/Automaton/tree/main/data/automaton) default automaton to let you test <br>
 <br>
-**choice 1**<br>
+**choice 1 choose your automaton file**<br>
 you can choose to close the window<br>
 ![screenshot win menu1 close](https://media.discordapp.net/attachments/778226108834512937/918915779007754260/unknown.png?width=466&height=430)<br>
 it'll bring you back the the choice menu<br>
