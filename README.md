@@ -89,11 +89,17 @@ don't forget to check the [doc](https://github.com/Yvorie90/Automaton/tree/main/
 Automaton autom = new AutomatonBuilder().creatWithFile("data/automaton/SmileyAutomata.txt");
 
 ```
+**How to use AutomatonExporter**<br>
+```java
+// AutomatonExporter has only static method so you don't have to initialize it
+Automaton autom = ...
+AutomatonExporter.exportAutomatonFormat(autom, "myAutomaton")
 
+```
+It will make a new file without extention containing your automaton,<br>
+so you can choose it when setting the name (I advise a simple .txt)
 
-
-
-### Let's have an example
+### Let's have an example of use
 
 
 
