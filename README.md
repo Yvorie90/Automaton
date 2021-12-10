@@ -12,9 +12,22 @@ you can get [here](https://github.com/Yvorie90/Automaton/tree/main/jar) the jar 
 - [uses of an automaton](#lets-have-an-example)
 
 
-
 #### What's an automaton 
+![exemple of an autoamton]()
+an automaton is basically a bunch of named states linked with character transitions
+there is one inital state and one or multiple final states
 
+**how does it look like in the code**
+an Automaton class
+```java
+
+
+```
+using State class
+```java
+
+
+```
 
 #### Use file to save and write your automaton
 
