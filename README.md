@@ -13,11 +13,11 @@ you can get [here](https://github.com/Yvorie90/Automaton/tree/main/jar) the jar 
 
 
 #### What's an automaton 
-![exemple of an autoamton]()
-an automaton is basically a bunch of named states linked with character transitions
-there is one inital state and one or multiple final states
+![exemple of an autoamton]() <br>
+an automaton is basically a bunch of named states linked with character transitions <br>
+there is one inital state and one or multiple final states <br>
 
-**how does it look like in the code**
+**how does it look like in the code** <br>
 an Automaton class
 ```java
 
