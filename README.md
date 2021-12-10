@@ -68,6 +68,7 @@ set your final(s) state(s) with "Final" and the name of your state<br>
 to set your transition tell the state where the transition begin, the character transition and then the state where it goes to<br>
 
 important things:<br>
+you don't have to initialize anything just use states, they'll be created if they're not already <br>
 you can use ".." to set multiple transitions once, like alpha (a,b,c,d, ... ,y,z) like that:<br>
 ```
 A1 a..z A2
@@ -88,19 +89,90 @@ don't forget to check the [doc](https://github.com/Yvorie90/Automaton/tree/main/
 ```java
 //create a new Automaton by using AutomatonBuilder and giving it the filepath
 Automaton autom = new AutomatonBuilder().creatWithFile("data/automaton/SmileyAutomata.txt");
-
 ```
 **How to use AutomatonExporter**<br>
 ```java
 // AutomatonExporter has only static method so you don't have to initialize it
 Automaton autom = ...
-AutomatonExporter.exportAutomatonFormat(autom, "myAutomaton")
-
+AutomatonExporter.exportAutomatonFormat(autom, "myAutomaton");
 ```
 It will make a new file without extention containing your automaton,<br>
 so you can choose it when you set the name (I advise a simple .txt)
 
 ### Let's have an example of use
+
+ didn't guessed
+first let's write an automaton, we'll use [this one](https://github.com/Yvorie90/Automaton/blob/main/data/automaton/HeureMinuteAutomata.txt)<br>
+just to mention, we could have write it this way:
+```
+E0 0..1 H1
+E0 2 H2
+H1 0..9 H
+H2 0..3 H
+H : M1
+M1 0..5 M2
+M2 0..9 M
+Init E0
+Final M
+```
+now we have our file, we saw how to use AutomatonBuilder
+```java
+Automaton automHHMM = new AutomatonBuilder().creatWithFile("data/automaton/SmileyAutomata.txt");
+```
+now we have our automaton, let's use it now<br>
+we'll use the class AutomatonReader, like AutomatonExporter it has only static methods<br>
+if you didn't guessed this automaton is for 'hours : minutes' format<br>
+now let's do some test
+```
+//the accept method match the automaton with the given string (don't forget to check the doc) 
+AutomatonReader.accept(automHHMM, "11:23");
+AutomatonReader.accept(automHHMM, "00:00");
+AutomatonReader.accept(automHHMM, "23:59");
+```
+those one return true
+```
+AutomatonReader.accept(automHHMM, "11;23");
+AutomatonReader.accept(automHHMM, "24:00");
+AutomatonReader.accept(automHHMM, "05:60");
+AutomatonReader.accept(automHHMM, "fzehf");
+```
+those one return false<br>
+
+### use the appli (only french for now)
+
+if you want to test your automaton you can use my application !! :D <br>
+just download this project and run the main class in [appli](https://github.com/Yvorie90/Automaton/blob/main/src/Appli.java)<br>
+
+first it'll open a choice menu in your terminal<br>
+![screenshot menu0](https://cdn.discordapp.com/attachments/778226108834512937/918913659953111090/unknown.png)<br>
+you can stop it by giving 0<br>
+![screenshot stop](![image](https://user-images.githubusercontent.com/73123597/145616574-90fd6cb4-f06f-460a-ab63-bddd2b723a6a.png)<br>
+if you give 1, it'll open a window to let your search your automaton file<br>
+if you give 2, it'll open another menu with [those](https://github.com/Yvorie90/Automaton/tree/main/data/automaton) default automaton to let you test <br>
+<br>
+**choice 1**<br>
+you can choose to close the window<br>
+![screenshot win menu1 close](https://media.discordapp.net/attachments/778226108834512937/918915779007754260/unknown.png?width=466&height=430)<br>
+it'll bring you back the the choice menu<br>
+![screenshot win menu1 close term](https://media.discordapp.net/attachments/778226108834512937/918915667992932372/unknown.png)<br>
+<br>
+you can choose your automaton file (we'll test with an email automaton)<br>
+![screenshot win menu1 open autom](https://media.discordapp.net/attachments/778226108834512937/918915511016882226/unknown.png?width=472&height=430)<br>
+it'll tell you the path of your file to ensure you it is the right one and bring you to another choice menu<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
