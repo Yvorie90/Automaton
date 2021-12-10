@@ -2,7 +2,7 @@
 this project allow you to make automatons with simple language and class.
 
 ## Installing 
-you can get [here]() the jar containing the .class of my project, feel free to install it on your project.
+you can get [here](https://github.com/Yvorie90/Automaton/tree/main/jar) the jar containing the .class of my project, feel free to install it on your project.
 
 ## How to use
 
